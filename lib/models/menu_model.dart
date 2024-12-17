@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 
+//Model Untuk Mendefinisikan Data Menu
 class Menu {
   final String id;
   final String nama;

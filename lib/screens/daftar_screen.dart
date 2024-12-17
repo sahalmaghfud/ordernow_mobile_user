@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:user_ordernow/screens/pilih_menu_screen.dart';
+import 'package:user_ordernow/screens/pilih_menu_screen.dart'; // Import Screen Berikutnya
 
+//Menampilkan Menu Utama
 class DaftarScreen extends StatefulWidget {
   const DaftarScreen({super.key});
 
@@ -10,7 +11,8 @@ class DaftarScreen extends StatefulWidget {
 }
 
 class _DaftarScreenState extends State<DaftarScreen> {
-  final TextEditingController _namaController = TextEditingController();
+  final TextEditingController _namaController =
+      TextEditingController(); // Set controller untuk text
   final TextEditingController _mejaController = TextEditingController();
   final _formKey = GlobalKey<FormState>();
 
@@ -74,6 +76,7 @@ class _DaftarScreenState extends State<DaftarScreen> {
     );
   }
 
+// Widget Nama
   Widget _buildNameTextField() {
     return TextFormField(
       controller: _namaController,
@@ -100,6 +103,7 @@ class _DaftarScreenState extends State<DaftarScreen> {
     );
   }
 
+// Widget No Meja
   Widget _buildTableNumberTextField() {
     return TextFormField(
       controller: _mejaController,
@@ -135,6 +139,7 @@ class _DaftarScreenState extends State<DaftarScreen> {
     );
   }
 
+// Widget Tombol Submit
   Widget _buildSubmitButton() {
     return ElevatedButton(
       onPressed: () => _submitData(context),

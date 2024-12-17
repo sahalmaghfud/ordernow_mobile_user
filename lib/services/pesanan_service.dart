@@ -5,16 +5,6 @@ class PesananService {
   final CollectionReference _pesananCollection =
       FirebaseFirestore.instance.collection('pesanan');
 
-  // Read Pesanan
-  Stream<List<Pesanan>> getPesanans() {
-    return _pesananCollection.snapshots().map((snapshot) {
-      return snapshot.docs.map((doc) {
-        final data = doc.data() as Map<String, dynamic>;
-        return Pesanan.fromJson({...data});
-      }).toList();
-    });
-  }
-
   Stream<DocumentSnapshot> getPesananById(String pesananId) {
     return _pesananCollection.doc(pesananId).snapshots();
   }

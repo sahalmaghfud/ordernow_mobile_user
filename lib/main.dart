@@ -20,7 +20,8 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: '/',
       routes: {
-        '/': (context) => const DaftarScreen(),
+        '/': (context) =>
+            const DaftarScreen(), // Route Default Ke Daftar Screen
       },
     );
   }

@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 
+//Model Untuk Mendefinisikan Data Pesanan
 class Pesanan {
   final String namaPel;
   final int noMeja;
