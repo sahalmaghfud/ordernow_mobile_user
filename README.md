@@ -1,6 +1,8 @@
 # user_ordernow
 
-A new Flutter project.
+I reused the idea from my web class for my mobile class. I literally built the exact same app on a different platform, the only difference is I used a NoSQL database for this one.
+
+![](https://github.com/sahalmaghfud/ordernow_mobile_user/blob/e99d8749d2b8e81924fe1f418a86e9877a724f4b/mobile.jpeg)
 
 ## Getting Started
 
